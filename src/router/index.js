@@ -12,9 +12,16 @@ import Location_seven from '../views/Location_seven'
 import Location_eight from '../views/Location_eight'
 import Location_nine from '../views/Location_nine'
 import Location_ten from '../views/Location_ten'
-import Location_eleven from '../views/Location_eleven'
 import Service_one from '../views/Service_one'
 import Service_two from '../views/Service_two'
+import Service_three from '../views/Service_three'
+import Service_four from '../views/Service_four'
+import Service_five from '../views/Service_five'
+import Service_six from '../views/Service_six'
+import Service_seven from '../views/Service_seven'
+import Service_eight from '../views/Service_eight'
+import Service_nine from '../views/Service_nine'
+import Service_ten from '../views/Service_ten'
 
 
 Vue.use(VueRouter)
@@ -97,12 +104,7 @@ const routes = [
     name: 'Location_ten',
     component: Location_ten
   }
-  ,
-  {
-    path: '/locationeleven',
-    name: 'Location_eleven',
-    component: Location_eleven
-  }
+
   ,
   {
     path: '/serviceone',
@@ -115,7 +117,55 @@ const routes = [
     name: 'Service_two',
     component: Service_two
   }
+  ,
+  {
+    path: '/servicethree',
+    name: 'Service_three',
+    component: Service_three
+  }
+  ,
+  {
+    path: '/servicefour',
+    name: 'Service_four',
+    component: Service_four
 
+  }
+  ,
+  {
+    path: '/servicefive',
+    name: 'Service_five',
+    component: Service_five
+  }
+  ,
+  {
+    path: '/servicesix',
+    name: 'Service_six',
+    component: Service_six
+  }
+  ,
+  {
+    path: '/serviceseven',
+    name: 'Service_seven',
+    component: Service_seven
+  }
+  ,
+  {
+    path: '/serviceeight',
+    name: 'Service_eight',
+    component: Service_eight
+  }
+  ,
+  {
+    path: '/servicenine',
+    name: 'Service_nine',
+    component: Service_nine
+  }
+  ,
+  {
+    path: '/serviceten',
+    name: 'Service_ten',
+    component: Service_ten
+  }
   // {
   //   path: '/about',
   //   name: 'About',

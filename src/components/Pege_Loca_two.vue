@@ -46,10 +46,10 @@
             หมู่บ้านทอผ้าไหมบ้านท่าสว่าง <a href="Locationeight"></a
           ></a-menu-item>
           <a-menu-item key="11">
-            ศาลหลักเมืองสุรินทร์ <a href="Locationten"></a
-          ></a-menu-item>
+            ศาลหลักเมืองสุรินทร์ <a href="Locationnine"></a>
+          </a-menu-item>
           <a-menu-item key="12">
-            ตลาดช่องจอม <a href="Locationeleven"></a
+            ตลาดช่องจอม <a href="Locationten"></a
           ></a-menu-item>
         </a-sub-menu>
         <a-sub-menu key="sub2">
@@ -58,12 +58,40 @@
             <span>Service</span></span
           >
           <a-menu-item key="6">
-            Service 1 <a href="serviceone">บริการที่ใกล้กับปราสาทศรีขมรภูมิ</a>
+            บริการที่ใกล้กับปราสาทศรีขมรภูมิ <a href="serviceone"></a>
           </a-menu-item>
           <a-menu-item key="8">
-            Service 2<a href="servicetwo"
-              >บริการที่ใกล้กับวนอุทยานแห่งชาติพนมสวาย</a
-            >
+            บริการที่ใกล้กับวนอุทยานแห่งชาติพนมสวาย
+            <a href="servicetwo"></a>
+          </a-menu-item>
+          <a-menu-item key="8">
+            บริการที่ใกล้กับหมู่บ้านช้างตากล้าว
+            <a href="servicethree"></a>
+          </a-menu-item>
+          <a-menu-item key="8">
+            บริการที่ใกล้กับปราสาทหินบ้านพลวง
+            <a href="servicefour"></a>
+          </a-menu-item>
+          <a-menu-item key="8">
+            บริการที่ใกล้กับวัดบูรพาราม
+            <a href="servicefive"></a>
+          </a-menu-item>
+          <a-menu-item key="8">
+            บริการที่ใกล้กับอ่างเก็บน้ำห้วยเสนง
+            <a href="servicesix"></a>
+          </a-menu-item>
+          <a-menu-item key="8">
+            บริการที่ใกล้กับอนุสาวรีย์พระยาสุรินทรภักดีศรีณรงค์จางวาง
+            <a href="serviceseven"></a> </a-menu-item
+          ><a-menu-item key="8">
+            บริการที่ใกล้กับหมู่บ้านทอผ้าไหมบ้านท่าสว่าง
+            <a href="serviceeight"></a> </a-menu-item
+          ><a-menu-item key="8">
+            บริการที่ใกล้กับศาลหลักเมืองสุรินทร์
+            <a href="servicenine"></a> </a-menu-item
+          ><a-menu-item key="8">
+            บริการที่ใกล้กับตลาดช่องจอม
+            <a href="serviceten"></a>
           </a-menu-item>
         </a-sub-menu>
         <a-menu-item key="9">

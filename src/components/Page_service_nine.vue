@@ -105,8 +105,8 @@
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item
-            >บริการที่ใกล้กับวนอุทยานแห่งชาติพนมสวาย</a-breadcrumb-item
-          >
+            >บริการที่ใกล้กับศาลหลักเมืองสุรินทร์
+          </a-breadcrumb-item>
 
           <!-- เปลี่ยนข้อมูลข้างล่าง -->
 

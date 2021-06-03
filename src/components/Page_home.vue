@@ -16,7 +16,8 @@
         <a-sub-menu key="sub1">
           <span slot="title"><a-icon type="user" /><span>Location</span></span>
           <a-menu-item key="3">
-            <a href="locationone"></a> ปราสาทศรีขมรภูมิ
+            ปราสาทศรีขมรภูมิ
+            <a href="locationone"></a>
           </a-menu-item>
           <a-menu-item key="4">
             วนอุทยานแห่งชาติพนมสวาย
@@ -45,21 +46,15 @@
             หมู่บ้านทอผ้าไหมบ้านท่าสว่าง <a href="Locationeight"></a
           ></a-menu-item>
           <a-menu-item key="11">
-            ศาลหลักเมืองสุรินทร์ <a href="Locationten"></a>
+            ศาลหลักเมืองสุรินทร์ <a href="Locationnine"></a>
           </a-menu-item>
           <a-menu-item key="12">
-            ตลาดช่องจอม <a href="Locationeleven"></a
+            ตลาดช่องจอม <a href="Locationten"></a
           ></a-menu-item>
         </a-sub-menu>
         <a-sub-menu key="sub2">
           <span slot="title"><a-icon type="shop" /><span>Service</span></span>
-          <a-menu-item key="13">
-            Service 1 <a href="serviceone">บริการที่ใกล้กับปราสาทศรีขมรภูมิ</a>
-          </a-menu-item>
-          <a-menu-item key="14">
-            Service 2
-            <a href="servicetwo">บริการที่ใกล้กับวนอุทยานแห่งชาติพนมสวาย</a>
-          </a-menu-item>
+          ปราสาทศรีขมรภูมิ
         </a-sub-menu>
         <a-menu-item key="15">
           <a-icon type="file" />

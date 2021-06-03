@@ -105,10 +105,50 @@
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item
-            >บริการที่ใกล้กับวนอุทยานแห่งชาติพนมสวาย</a-breadcrumb-item
+            >บริการที่ใกล้กับอ่างเก็บน้ำห้วยเสนง</a-breadcrumb-item
           >
 
           <!-- เปลี่ยนข้อมูลข้างล่าง -->
+
+          <div style="background-color: #ececec; padding: 20px">
+            <a-row :gutter="16">
+              <a-col :span="8">
+                <a-card title="Card title" :bordered="false">
+                  <p>card content</p>
+                </a-card>
+              </a-col>
+              <a-col :span="8">
+                <a-card title="Card title" :bordered="false">
+                  <p>card content</p>
+                </a-card>
+              </a-col>
+              <a-col :span="8">
+                <a-card title="Card title" :bordered="false">
+                  <p>card content</p>
+                </a-card>
+              </a-col>
+            </a-row>
+          </div>
+
+          <div style="background-color: #ececec; padding: 20px">
+            <a-row :gutter="16">
+              <a-col :span="8">
+                <a-card title="Card title" :bordered="false">
+                  <p>card content</p>
+                </a-card>
+              </a-col>
+              <a-col :span="8">
+                <a-card title="Card title" :bordered="false">
+                  <p>card content</p>
+                </a-card>
+              </a-col>
+              <a-col :span="8">
+                <a-card title="Card title" :bordered="false">
+                  <p>card content</p>
+                </a-card>
+              </a-col>
+            </a-row>
+          </div>
 
           <!-- | -->
 
