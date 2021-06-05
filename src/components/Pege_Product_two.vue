@@ -142,54 +142,68 @@
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
-          <a-breadcrumb-item>หมู่บ้านช้างตากลาง</a-breadcrumb-item>
-          <a-breadcrumb-item></a-breadcrumb-item>
+          <a-breadcrumb-item>
+            สินค้าขึ้นชื่อของวนอุทยานแห่งชาติพนมสวาย</a-breadcrumb-item
+          >
         </a-breadcrumb>
         <div
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
-          <!-- เปลี่ยนข้อมูลข้างล่าง -->
-          <div>
-            <br /><br />
-            <img alt="Vue " src="../assets/ช้าง.jpg" style="width: 35%" />
+          <!-- แก้ไข้ข้างล่าง -->
+          <div style="background-color: #ececec; padding: 20px">
+            <a-row :gutter="16">
+              <a-col :span="8">
+                <a-card title="ประวัติเมืองสุรินทร์" :bordered="false">
+                  <p>รับชมเพิ่มเติม</p>
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ช้าง.jpg"
+                    width="390"
+                    height="219"
+                  />
+                  <div>
+                    <a-button type="primary" :size="size" href="about">
+                      Click
+                    </a-button>
+                  </div>
+                </a-card>
+              </a-col>
 
-            <a-descriptions
-              title="ข้อมูลสถานที่"
-              bordered
-              :column="{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }"
-            >
-              <a-descriptions-item label="ค่าเข้า">
-                <h1>
-                  ผู้ใหญ่ คนละ 50 บาท <br />เด็กโต คนละ 20 บาท<br />
-                  เด็กเล็ก คนละ 10 บาท<br />
-                  ชาวต่างชาติ คนละ 100 บาท <br />
-                </h1>
-              </a-descriptions-item>
+              <a-col :span="8">
+                <a-card title="สถานที่แนะนำ" :bordered="false">
+                  <p>รับชมเพิ่มเติม</p>
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ปราสาท3.jpg"
+                    width="390"
+                    height="219"
+                  />
+                  <div>
+                    <a-button type="primary" :size="size" href="locationone">
+                      Click
+                    </a-button>
+                  </div>
+                </a-card>
+              </a-col>
 
-              <a-descriptions-item label="เปิดให้เข้าชม">
-                <h1>
-                  วันละ 2 รอบ คือ 10.00 น. และ 14.00 น. <br />
-                  ไม่เว้นวันหยุดเสาร์-อาทิตย์ <br />หรือวันหยุดนักขัตฤกษ์
-                </h1>
-              </a-descriptions-item>
-
-              <br />
-              <a-descriptions-item label="ลักษณะ">
-                <blockquote style="margin: 25px 50px 75px 100px">
-                  <p style="text-indent: 50px; font-size: 16px" width="480">
-                    หมู่บ้านช้างศูนย์คชศึกษา หรือ หมู่บ้านช้างบ้านตากลาง
-                    จ.สุรินทร์ เป็นสถานที่ดำเนินงานตามโครงการนำช้างคืนถิ่น
-                    เพื่อแก้ไขปัญหาช้างเร่ร่อนให้กลับมาอยู่ถิ่นฐานบ้านเกิดอย่างมีความสุขโดยจัดการท่องเที่ยวเชิงวัฒนธรรมเพื่อรองรับนักท่องเที่ยว
-                    อาทิ การแสดงของช้าง พิพิธภัณฑ์ช้าง และการแสดงช้างเล่นน้ำ
-                    ในช่วงเวลาที่ไม่มีการแสดง
-                    สามารถเข้ามาชมและสัมผัสช้างได้อย่างใกล้ชิด
-                    ทั้งลอดท้องข้างขี่ช้าง นั่งงวงช้าง
-                    โดยให้ค่าตอบแทนใส่กล่องบริจาคที่ควาญช้างแต่ละตัวตามความเหมาะสม
-                    ซึ่งช้างในศูนย์คชศึกษาเป็นช้างที่ค่อนข้างเชื่องมีคุ้นเคยกับนักท่องเที่ยวเป็นอย่างดี
-                  </p>
-                </blockquote>
-              </a-descriptions-item>
-            </a-descriptions>
+              <a-col :span="8">
+                <a-card title="สินค้าร้านอาหารที่น่าสนใจ" :bordered="false">
+                  <p>รับชมเพิ่มเติม</p>
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ของฝาก.jpg"
+                    width="390"
+                    height="219"
+                  />
+                  <div>
+                    <a-button type="primary" :size="size"> Click </a-button>
+                  </div>
+                </a-card>
+              </a-col>
+            </a-row>
           </div>
         </div>
       </a-layout-content>

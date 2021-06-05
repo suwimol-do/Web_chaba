@@ -22,6 +22,16 @@ import Service_seven from '../views/Service_seven'
 import Service_eight from '../views/Service_eight'
 import Service_nine from '../views/Service_nine'
 import Service_ten from '../views/Service_ten'
+import Product_one from '../views/Product_one'
+import Product_two from '../views/Product_two'
+import Product_three from '../views/Product_three'
+import Product_four from '../views/Product_four'
+import Product_five from '../views/Product_five'
+import Product_six from '../views/Product_six'
+import Product_seven from '../views/Product_seven'
+import Product_eight from '../views/Product_eight'
+import Product_nine from '../views/Product_nine'
+import Product_ten from '../views/Product_ten'
 
 
 Vue.use(VueRouter)
@@ -165,6 +175,67 @@ const routes = [
     path: '/serviceten',
     name: 'Service_ten',
     component: Service_ten
+  }
+
+  ,
+  {
+    path: '/Productone',
+    name: 'Product_one',
+    component: Product_one
+  }
+  ,
+  {
+    path: '/Producttwo',
+    name: 'Product_two',
+    component: Product_two
+  }
+  ,
+  {
+    path: '/Productthree',
+    name: 'Product_three',
+    component: Product_three
+  }
+  ,
+  {
+    path: '/Productfour',
+    name: 'Product_four',
+    component: Product_four
+  }
+  ,
+  {
+    path: '/Productfive',
+    name: 'Product_five',
+    component: Product_five
+  }
+  ,
+  {
+    path: '/Productsix',
+    name: 'Product_six',
+    component: Product_six
+  }
+  ,
+  {
+    path: '/Productseven',
+    name: 'Product_seven',
+    component: Product_seven
+  }
+  ,
+  {
+    path: '/Producteight',
+    name: 'Product_eight',
+    component: Product_eight
+  }
+  ,
+  {
+    path: '/Productnine',
+    name: 'Product_nine',
+    component: Product_nine
+  }
+  ,
+  {
+    path: '/Productten',
+    name: 'product_ten',
+    component: Product_ten
   }
   // {
   //   path: '/about',
