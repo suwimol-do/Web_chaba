@@ -149,6 +149,7 @@
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
           <!-- แก้ไข้ข้างล่าง -->
+
           <h1>ประวัติเมืองสุรินทร์</h1>
           <img alt="Vue " src="../assets/คำขวัญ.png" />
           <img alt="Vue " src="../assets/ตรา.png" style="width: 14%" />
@@ -187,7 +188,7 @@
       <!-- | -->
 
       <a-layout-footer style="text-align: center">
-        Ant Design ©2018 Created by Ant UED
+        Surin tourism website ©2021 Created by NONG CHABA TEAM
       </a-layout-footer>
     </a-layout>
   </a-layout>

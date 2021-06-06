@@ -150,6 +150,94 @@
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
           <!-- เปลี่ยนข้อมูลข้างล่าง -->
+          <a-tabs>
+            <a-tab-pane key="1" tab="ที่พัก">
+              <div>
+                <a-row>
+                  <a-col :span="12">
+                    <div>
+                      <a-card title="ชื่อที่พัก" style="width: 500px">
+                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                        <img
+                          alt="Vue "
+                          src="../assets/วัด2.jpg"
+                          style="width: 300px"
+                        />
+                        <br />
+                        <br />
+                        <br />
+                        <p>card content</p>
+                        <p>card content</p>
+                        <p>card content</p>
+                      </a-card>
+                    </div>
+                  </a-col>
+                  <a-col :span="12">
+                    <div>
+                      <a-card title="ชื่อที่พัก" style="width: 500px">
+                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                        <img
+                          alt="Vue "
+                          src="../assets/วัด2.jpg"
+                          style="width: 300px"
+                        />
+                        <br />
+                        <br />
+                        <br />
+                        <p>card content</p>
+                        <p>card content</p>
+                        <p>card content</p>
+                      </a-card>
+                      <br />
+                    </div>
+                  </a-col>
+                </a-row>
+              </div>
+            </a-tab-pane>
+            <a-tab-pane key="2" tab="ร้านอาหาร">
+              <div>
+                <a-row>
+                  <a-col :span="12">
+                    <div>
+                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
+                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                        <img
+                          alt="Vue "
+                          src="../assets/วัด2.jpg"
+                          style="width: 300px"
+                        />
+                        <br />
+                        <br />
+                        <br />
+                        <p>card content</p>
+                        <p>card content</p>
+                        <p>card content</p>
+                      </a-card>
+                    </div>
+                  </a-col>
+                  <a-col :span="12">
+                    <div>
+                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
+                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                        <img
+                          alt="Vue "
+                          src="../assets/วัด2.jpg"
+                          style="width: 300px"
+                        />
+                        <br />
+                        <br />
+                        <br />
+                        <p>card content</p>
+                        <p>card content</p>
+                        <p>card content</p>
+                      </a-card>
+                      <br />
+                    </div>
+                  </a-col>
+                </a-row>
+              </div>
+            </a-tab-pane>
+          </a-tabs>
 
           <!-- | -->
         </div>
@@ -158,7 +246,7 @@
       <!-- | -->
 
       <a-layout-footer style="text-align: center">
-        Ant Design ©2018 Created by Ant UED
+        Surin tourism website ©2021 Created by NONG CHABA TEAM
       </a-layout-footer>
     </a-layout>
   </a-layout>

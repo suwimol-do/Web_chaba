@@ -139,6 +139,8 @@
     </a-layout-sider>
     <!-- | -->
 
+    <!-- เเก้ไขข้อมูด้านล่าง -->
+
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
@@ -149,7 +151,6 @@
         <div
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
-          เเก้ไขข้อมูด้านล่าง
           <div>
             <br /><br />
             <img alt="Vue " src="../assets/ปราสาท1.jpg" style="width: 35%" />
@@ -200,7 +201,7 @@
       <!-- | -->
 
       <a-layout-footer style="text-align: center">
-        Ant Design ©2018 Created by Ant UED
+        Surin tourism website ©2021 Created by NONG CHABA TEAM
       </a-layout-footer>
     </a-layout>
   </a-layout>
