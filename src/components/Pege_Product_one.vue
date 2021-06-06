@@ -151,143 +151,74 @@
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
           <!-- เปลี่ยนข้อความด้านล่าง -->
+          <div>
+            <a-divider orientation="left"> รายการสินค้า </a-divider>
+            <a-row type="flex" justify="center">
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
 
-          <div style="background-color: #ececec; padding: 20px">
-            <a-row :gutter="16">
-              <a-col :span="8">
-                <a-card title="สินค้า 1" :bordered="false">
-                  <a-card hoverable style="width: 320px">
-                    <img
-                      slot="cover"
-                      alt="example"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-                    />
-                    <div>
-                      <a-input-number
-                        :default-value="1000"
-                        :formatter="
-                          (value) =>
-                            `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-                        "
-                        :parser="(value) => value.replace(/\$\s?|(,*)/g, '')"
-                        @change="onChange"
-                      />
-                    </div>
+                  <div>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </a-modal>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="Europe Street beat">
+                    <template slot="description"> www.instagram.com </template>
                     <br />
-
-                    <div>
-                      <a-button type="primary" @click="showModal">
-                        รายละเอียด
-                      </a-button>
-                      <a-modal
-                        v-model="visible"
-                        title="รายละเอียด"
-                        ok-text="ok"
-                        cancel-text="cancel"
-                        @ok="hideModal"
-                      >
-                        <p>รายละเอียดของสินค้า</p>
-                        <!-- <p>Bla bla ...</p>
-                        <p>Bla bla ...</p> -->
-                      </a-modal>
-                      <br />
-                      <br />
-                      <a-button @click="confirm"> สั่งซื้อ </a-button>
-                    </div>
-                  </a-card>
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
+              <a-col :span="4"> </a-col>
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
 
-              <a-col :span="8">
-                <a-card title="สินค้า 2" :bordered="false">
-                  <a-card hoverable style="width: 320px">
-                    <img
-                      slot="cover"
-                      alt="example"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-                    />
-                    <div>
-                      <a-input-number
-                        :default-value="1000"
-                        :formatter="
-                          (value) =>
-                            `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-                        "
-                        :parser="(value) => value.replace(/\$\s?|(,*)/g, '')"
-                        @change="onChange"
-                      />
-                    </div>
+                  <div>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </a-modal>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="Europe Street beat">
+                    <template slot="description"> www.instagram.com </template>
                     <br />
-                    <div>
-                      <a-button type="primary" @click="showModal">
-                        รายละเอียด
-                      </a-button>
-                      <a-modal
-                        v-model="visible"
-                        title="รายละเอียด"
-                        ok-text="ok"
-                        cancel-text="cancel"
-                        @ok="hideModal"
-                      >
-                        <p>รายละเอียดของสินค้า</p>
-                        <!-- <p>Bla bla ...</p>
-                        <p>Bla bla ...</p> -->
-                      </a-modal>
-                      <br />
-                      <br />
-                      <a-button @click="confirm"> สั่งซื้อ </a-button>
-                    </div>
-                  </a-card>
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
-              <a-col :span="8">
-                <a-card title="สินค้า 3" :bordered="false">
-                  <a-card hoverable style="width: 320px">
-                    <img
-                      slot="cover"
-                      alt="example"
-                      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-                    />
-                    <div>
-                      <a-input-number
-                        :default-value="1000"
-                        :formatter="
-                          (value) =>
-                            `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-                        "
-                        :parser="(value) => value.replace(/\$\s?|(,*)/g, '')"
-                        @change="onChange"
-                      />
-                    </div>
-                    <br />
-                    <div>
-                      <a-button type="primary" @click="showModal">
-                        รายละเอียด
-                      </a-button>
-                      <a-modal
-                        v-model="visible"
-                        title="รายละเอียด"
-                        ok-text="ok"
-                        cancel-text="cancel"
-                        @ok="hideModal"
-                      >
-                        <p>รายละเอียดของสินค้า</p>
-                        <!-- <p>Bla bla ...</p>
-                        <p>Bla bla ...</p> -->
-                      </a-modal>
-                      <br />
-                      <br />
-                      <a-button @click="confirm"> สั่งซื้อ </a-button>
-                    </div>
-                  </a-card>
-                </a-card>
-              </a-col>
+              <a-col :span="4"> </a-col>
             </a-row>
           </div>
+          <!-- | -->
         </div>
       </a-layout-content>
-
-      <!-- | -->
 
       <a-layout-footer style="text-align: center">
         Ant Design ©2018 Created by Ant UED
@@ -307,16 +238,9 @@ export default {
     showModal() {
       this.visible = true;
     },
-    hideModal() {
+    handleOk(e) {
+      console.log(e);
       this.visible = false;
-    },
-    confirm() {
-      this.$confirm({
-        title: "ยืนยันการสั่งซื้อ",
-        content: "จำนวน 1 ชิ้น ",
-        okText: "OK",
-        cancelText: "Cancel",
-      });
     },
   },
 };

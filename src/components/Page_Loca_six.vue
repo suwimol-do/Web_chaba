@@ -204,7 +204,7 @@
       <!-- | -->
 
       <a-layout-footer style="text-align: center">
-        Ant Design ©2018 Created by Ant UED
+        Surin tourism website ©2021 Created by NONG CHABA TEAM
       </a-layout-footer>
     </a-layout>
   </a-layout>

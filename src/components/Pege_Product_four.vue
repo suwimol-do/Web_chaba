@@ -150,43 +150,75 @@
         <div
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
-          <!-- แก้ไข้ข้างล่าง -->
-          <h1>ประวัติเมืองสุรินทร์</h1>
-          <img alt="Vue " src="../assets/คำขวัญ.png" />
-          <img alt="Vue " src="../assets/ตรา.png" style="width: 14%" />
+          <!-- เปลี่ยนข้อความด้านล่าง -->
+          <div>
+            <a-divider orientation="left"> รายการสินค้า </a-divider>
+            <a-row type="flex" justify="center">
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
 
-          <div style="background-color: #ececec; padding: 20px">
-            <a-row :gutter="16">
-              <a-col :span="8">
-                <a-card title="คำขวัญ" :bordered="false">
-                  <p>
-                    สุรินทร์ถิ่นช้างใหญ่ ผ้าไหมงาม ประคำสวย ร่ำรวยปราสาท<br />
-                    ผักกาดหวาน ข้าวสารหอม งามพร้อมวัฒนธรรม
-                  </p>
+                  <div>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </a-modal>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="Europe Street beat">
+                    <template slot="description"> www.instagram.com </template>
+                    <br />
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
-              <a-col :span="8">
-                <a-card title="ที่ตั้ง" :bordered="false">
-                  <p>
-                    ถนนหลักเมือง ตำบลในเมือง อำเภอเมืองสุรินทร์ จังหวัดสุรินทร์
-                    32000
-                  </p>
+              <a-col :span="4"> </a-col>
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+
+                  <div>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </a-modal>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="Europe Street beat">
+                    <template slot="description"> www.instagram.com </template>
+                    <br />
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
-              <a-col :span="8">
-                <a-card title="จังหวัด" :bordered="false">
-                  <p>
-                    สุรินทร์ เป็นจังหวัดหนึ่งในภาคตะวันออกเฉียงเหนือตอนล่าง<br />
-                    มีชื่อเสียงด้านการเลี้ยงช้าง มีประชากรมากเป็นอันดับที่ 11<br />
-                  </p>
-                </a-card>
-              </a-col>
+              <a-col :span="4"> </a-col>
             </a-row>
           </div>
+          <!-- | -->
         </div>
       </a-layout-content>
-
-      <!-- | -->
 
       <a-layout-footer style="text-align: center">
         Ant Design ©2018 Created by Ant UED
@@ -199,7 +231,17 @@ export default {
   data() {
     return {
       collapsed: false,
+      visible: false,
     };
+  },
+  methods: {
+    showModal() {
+      this.visible = true;
+    },
+    handleOk(e) {
+      console.log(e);
+      this.visible = false;
+    },
   },
 };
 </script>

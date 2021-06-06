@@ -149,66 +149,75 @@
         <div
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
-          <!-- แก้ไข้ข้างล่าง -->
-          <div style="background-color: #ececec; padding: 20px">
-            <a-row :gutter="16">
-              <a-col :span="8">
-                <a-card title="ประวัติเมืองสุรินทร์" :bordered="false">
-                  <p>รับชมเพิ่มเติม</p>
-                  <img
-                    slot="cover"
-                    alt="example"
-                    src="../assets/ช้าง.jpg"
-                    width="390"
-                    height="219"
-                  />
-                  <div>
-                    <a-button type="primary" :size="size" href="about">
-                      Click
-                    </a-button>
-                  </div>
-                </a-card>
-              </a-col>
+          <!-- เปลี่ยนข้อความด้านล่าง -->
+          <div>
+            <a-divider orientation="left"> รายการสินค้า </a-divider>
+            <a-row type="flex" justify="center">
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
 
-              <a-col :span="8">
-                <a-card title="สถานที่แนะนำ" :bordered="false">
-                  <p>รับชมเพิ่มเติม</p>
-                  <img
-                    slot="cover"
-                    alt="example"
-                    src="../assets/ปราสาท3.jpg"
-                    width="390"
-                    height="219"
-                  />
                   <div>
-                    <a-button type="primary" :size="size" href="locationone">
-                      Click
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
                     </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </a-modal>
                   </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="Europe Street beat">
+                    <template slot="description"> www.instagram.com </template>
+                    <br />
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
+              <a-col :span="4"> </a-col>
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
 
-              <a-col :span="8">
-                <a-card title="สินค้าร้านอาหารที่น่าสนใจ" :bordered="false">
-                  <p>รับชมเพิ่มเติม</p>
-                  <img
-                    slot="cover"
-                    alt="example"
-                    src="../assets/ของฝาก.jpg"
-                    width="390"
-                    height="219"
-                  />
                   <div>
-                    <a-button type="primary" :size="size"> Click </a-button>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </a-modal>
                   </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="Europe Street beat">
+                    <template slot="description"> www.instagram.com </template>
+                    <br />
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
+              <a-col :span="4"> </a-col>
             </a-row>
           </div>
+          <!-- | -->
         </div>
       </a-layout-content>
-
-      <!-- | -->
 
       <a-layout-footer style="text-align: center">
         Ant Design ©2018 Created by Ant UED
@@ -221,7 +230,17 @@ export default {
   data() {
     return {
       collapsed: false,
+      visible: false,
     };
+  },
+  methods: {
+    showModal() {
+      this.visible = true;
+    },
+    handleOk(e) {
+      console.log(e);
+      this.visible = false;
+    },
   },
 };
 </script>
