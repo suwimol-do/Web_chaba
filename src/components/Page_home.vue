@@ -1,7 +1,26 @@
+
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
-      <div class="logo" />
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
+
+      <!-- Main -->
+
       <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
@@ -138,7 +157,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -150,6 +185,7 @@
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
           <h1></h1>
+          <!-- เปลี่ยนข้อมูล -->
 
           <div style="background-color: #ececec; padding: 20px">
             <a-row :gutter="16">
@@ -200,7 +236,9 @@
                     height="219"
                   />
                   <div>
-                    <a-button type="primary" :size="size"> Click </a-button>
+                    <a-button type="primary" :size="size" href="Productone">
+                      Click
+                    </a-button>
                   </div>
                 </a-card>
               </a-col>
@@ -230,14 +268,22 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-#components-layout-demo-side .logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px;
+
+<style scoped>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
 }
 </style>
+
 
 
 

@@ -193,14 +193,13 @@
                       รายละเอียนสินค้า
                     </a-button>
                     <a-modal
-                      v-model="visible"
+                      v-model="visibl"
                       title="Basic Modal"
                       @ok="handleOk"
                     >
-                      <!-- รายละเอียด -->
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
+                      <p>Some</p>
+                      <p>Some</p>
+                      <p>Some</p>
                     </a-modal>
                   </div>
                   <br />
@@ -230,8 +229,8 @@
 export default {
   data() {
     return {
-      collapsed: false,
-      visible: false,
+      // collapsed: false,
+      visible: true,
     };
   },
   methods: {
