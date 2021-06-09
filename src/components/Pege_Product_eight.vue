@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['20']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -150,42 +182,98 @@
         <div
           :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
         >
-          <!-- แก้ไข้ข้างล่าง -->
-          <h1>ประวัติเมืองสุรินทร์</h1>
-          <img alt="Vue " src="../assets/คำขวัญ.png" />
-          <img alt="Vue " src="../assets/ตรา.png" style="width: 14%" />
+          <!-- เปลี่ยนข้อความด้านล่าง -->
+          <div>
+            <a-divider orientation="left"> รายการสินค้า </a-divider>
+            <a-row type="flex" justify="center">
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ผ้าคลุมไหล่.jpg"
+                  />
 
-          <div style="background-color: #ececec; padding: 20px">
-            <a-row :gutter="16">
-              <a-col :span="8">
-                <a-card title="คำขวัญ" :bordered="false">
-                  <p>
-                    สุรินทร์ถิ่นช้างใหญ่ ผ้าไหมงาม ประคำสวย ร่ำรวยปราสาท<br />
-                    ผักกาดหวาน ข้าวสารหอม งามพร้อมวัฒนธรรม
-                  </p>
+                  <div>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : เมืองสุรินทร์
+                      </p>
+                      <p>ประเภทสินค้า :ผ้า เครื่องแต่งกาย</p>
+                      <p>
+                        นางนิรมล ติดใจดี<br />
+                        กลุ่มปรับตัวสู่การพัฒนา<br />
+                        โทร :081-4870237
+                      </p>
+                    </a-modal>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="ผ้าคลุมไหล่">
+                    <template slot="description"> 1650.00 บาท</template>
+                    <br />
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
-              <a-col :span="8">
-                <a-card title="ที่ตั้ง" :bordered="false">
-                  <p>
-                    ถนนหลักเมือง ตำบลในเมือง อำเภอเมืองสุรินทร์ จังหวัดสุรินทร์
-                    32000
-                  </p>
+              <a-col :span="4"> </a-col>
+              <a-col :span="4">
+                <a-card hoverable style="width: 400px">
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ผ้าไหมพื้นเรียบ.jpg"
+                  />
+
+                  <div>
+                    <a-button type="primary" @click="showModal">
+                      รายละเอียนสินค้า
+                    </a-button>
+                    <a-modal
+                      v-model="visible"
+                      title="Basic Modal"
+                      @ok="handleOk"
+                    >
+                      <!-- รายละเอียด -->
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : เมืองสุรินทร์
+                      </p>
+                      <p>ประเภทสินค้า :ผ้า เครื่องแต่งกาย</p>
+                      <p>
+                        กลุ่มผลิตเครื่องประดับงาช้าง<br />
+                        นางนิรมล ติดใจดี<br />
+                        กลุ่มปรับตัวสู่การพัฒนา<br />
+                        โทร :081-4870237
+                      </p>
+                    </a-modal>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- ชื่อสินค้า -->
+                  <a-card-meta title="ผ้าไหมพื้นเรียบ">
+                    <template slot="description">1000.00 - 2000.00 </template>
+                    <br />
+                    <br />
+                  </a-card-meta>
                 </a-card>
               </a-col>
-              <a-col :span="8">
-                <a-card title="จังหวัด" :bordered="false">
-                  <p>
-                    สุรินทร์ เป็นจังหวัดหนึ่งในภาคตะวันออกเฉียงเหนือตอนล่าง<br />
-                    มีชื่อเสียงด้านการเลี้ยงช้าง มีประชากรมากเป็นอันดับที่ 11<br />
-                  </p>
-                </a-card>
-              </a-col>
+              <a-col :span="4"> </a-col>
             </a-row>
           </div>
+          <!-- | -->
         </div>
       </a-layout-content>
-
       <!-- | -->
 
       <a-layout-footer style="text-align: center">
@@ -205,6 +293,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

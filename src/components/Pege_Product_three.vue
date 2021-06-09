@@ -1,8 +1,25 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
+
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['15']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +155,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -156,7 +189,11 @@
             <a-row type="flex" justify="center">
               <a-col :span="4">
                 <a-card hoverable style="width: 400px">
-                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/กำไลงาช้าง.jpg"
+                  />
 
                   <div>
                     <a-button type="primary" @click="showModal">
@@ -168,16 +205,24 @@
                       @ok="handleOk"
                     >
                       <!-- รายละเอียด -->
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : ท่าตูม
+                      </p>
+                      <p>ประเภทสินค้า :เครื่องประดับ</p>
+                      <p>
+                        กลุ่มผลิตเครื่องประดับงาช้าง<br />
+                        2/3 กระโพ หมู่ 1 ต.กระโพ อ.ท่าตูม จ.สุรินทร์<br />
+                        ติดต่อ : นางวันนา อินทอง<br />
+                        โทร :08-1760-3786, 0-44145-6067
+                      </p>
                     </a-modal>
                   </div>
                   <br />
                   <br />
                   <!-- ชื่อสินค้า -->
-                  <a-card-meta title="Europe Street beat">
-                    <template slot="description"> www.instagram.com </template>
+                  <a-card-meta title="กำไลงาช้าง">
+                    <template slot="description"> 250.00 - 500.00 บาท</template>
                     <br />
                     <br />
                   </a-card-meta>
@@ -186,7 +231,11 @@
               <a-col :span="4"> </a-col>
               <a-col :span="4">
                 <a-card hoverable style="width: 400px">
-                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/สร้อยงาช้าง.jpg"
+                  />
 
                   <div>
                     <a-button type="primary" @click="showModal">
@@ -198,16 +247,24 @@
                       @ok="handleOk"
                     >
                       <!-- รายละเอียด -->
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : ท่าตูม
+                      </p>
+                      <p>ประเภทสินค้า :เครื่องประดับ</p>
+                      <p>
+                        กลุ่มผลิตเครื่องประดับงาช้าง<br />
+                        2/3 กระโพ หมู่ 1 ต.กระโพ อ.ท่าตูม จ.สุรินทร์<br />
+                        ติดต่อ : นางวันนา อินทอง<br />
+                        โทร :08-1760-3786, 0-44145-6067
+                      </p>
                     </a-modal>
                   </div>
                   <br />
                   <br />
                   <!-- ชื่อสินค้า -->
-                  <a-card-meta title="Europe Street beat">
-                    <template slot="description"> www.instagram.com </template>
+                  <a-card-meta title="สร้อยงาช้าง">
+                    <template slot="description">250.00 - 500.00 บาท </template>
                     <br />
                     <br />
                   </a-card-meta>
@@ -247,6 +304,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

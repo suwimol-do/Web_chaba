@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['29']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -157,37 +189,52 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="The Wood" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://www.facebook.com/thewoodsurin/?ref=bookmarks"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.11.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 706 บาท/คืน</p>
+                        <p>
+                          บ้านเลขที่ 9 ซอย เทศบาลบำรุง ตำบล ในเมือง
+                          อำเภอเมืองสุรินทร์ 32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0630237999</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="โรงแรมสุรินทร์มาเจสติก"
+                        style="width: 500px"
+                      >
+                        <a slot="extra" href="http://www.surinmajestic.com/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.12.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 647 บาท/คืน</p>
+                        <p>
+                          99, Jitrbumrung Road, Tambon Nai Mueang, Amphoe
+                          Mueang, Surin, 32000, 32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 044713980</p>
                       </a-card>
                       <br />
                     </div>
@@ -200,37 +247,57 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="โกนขแมร์ แหนมเนือง สุรินทร์"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://konkhmerart-restaurant.business.site/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/แหนม.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันอังคาร-วันอาทิตย์ 11:00–21:00</p>
+                        <p>
+                          203 ตรอก ตรอก ศรีไผทสมันต์ ในเมือง เมือง สุรินทร์
+                          32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0833855599</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="DISH Steak Surin ดิชสเต็ก สุรินทร์"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://www.facebook.com/dishsteak"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/สเต็ก1.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันอาทิตย์ 15:00–22:00</p>
+                        <p>
+                          81-83 ถนน สนิทนิคมรัฐ ตำบล ในเมือง อำเภอเมืองสุรินทร์
+                          สุรินทร์ 32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0655544294</p>
                       </a-card>
                       <br />
                     </div>
@@ -263,6 +330,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

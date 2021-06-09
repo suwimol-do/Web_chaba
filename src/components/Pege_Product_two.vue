@@ -1,8 +1,25 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
+
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['14']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +155,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -155,7 +188,11 @@
             <a-row type="flex" justify="center">
               <a-col :span="4">
                 <a-card hoverable style="width: 400px">
-                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/เสื้อทอผ้าไหม.jpg"
+                  />
 
                   <div>
                     <a-button type="primary" @click="showModal">
@@ -167,16 +204,28 @@
                       @ok="handleOk"
                     >
                       <!-- รายละเอียด -->
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : เมืองสุรินทร์
+                      </p>
+                      <p>ประเภทสินค้า : ผ้า และเครื่องแต่งกาย</p>
+                      <p>
+                        ชื่อหมู่บ้านนาบัว<br />
+
+                        ที่อยู่: หมู่ที่ 5 ตำบลโคกหินแฮ่ อำเภอเรณูนคร
+                        จังหวัดนครพนม เบอร์โทร : 099 634 7479 083 563 8743
+                        <br />
+                        อีเมล : surachayn@gmail.com
+                      </p>
                     </a-modal>
                   </div>
                   <br />
                   <br />
                   <!-- ชื่อสินค้า -->
-                  <a-card-meta title="Europe Street beat">
-                    <template slot="description"> www.instagram.com </template>
+                  <a-card-meta
+                    title="ผ้าทอมือ ผ้าเทป เสื้อพื้นเมือง ผ้ามัดหมี่"
+                  >
+                    <template slot="description">250.00 บาท </template>
                     <br />
                     <br />
                   </a-card-meta>
@@ -185,7 +234,11 @@
               <a-col :span="4"> </a-col>
               <a-col :span="4">
                 <a-card hoverable style="width: 400px">
-                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ผ้าขาวม้า.jpg"
+                  />
 
                   <div>
                     <a-button type="primary" @click="showModal">
@@ -197,16 +250,30 @@
                       @ok="handleOk"
                     >
                       <!-- รายละเอียด -->
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : เมืองสุรินทร์
+                      </p>
+                      <p>
+                        ประเภทสินค้า : ผ้า และเครื่องแต่งกาย<br />
+                        ผ้าขาวม้ามีลักษณะเป็นผ้ารูปสี่เหลี่ยมผืนผ้า
+                        ความกว้างประมาณ 2 ศอก ยาวประมาณ 3-4 ศอก
+                      </p>
+                      <p>
+                        ชื่อหมู่บ้านนาบัว<br />
+
+                        ที่อยู่: หมู่ที่ 5 ตำบลโคกหินแฮ่ อำเภอเรณูนคร
+                        จังหวัดนครพนม เบอร์โทร : 099 634 7479 083 563 8743
+                        <br />
+                        อีเมล : surachayn@gmail.com
+                      </p>
                     </a-modal>
                   </div>
                   <br />
                   <br />
                   <!-- ชื่อสินค้า -->
-                  <a-card-meta title="Europe Street beat">
-                    <template slot="description"> www.instagram.com </template>
+                  <a-card-meta title="ผ้าขาวม้า">
+                    <template slot="description">200.00 - 300.00 บาท </template>
                     <br />
                     <br />
                   </a-card-meta>
@@ -246,6 +313,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

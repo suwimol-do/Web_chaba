@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['11']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -152,7 +184,11 @@
 
           <div>
             <br /><br />
-            <img alt="Vue " src="../assets/วัด2.jpg" style="width: 35%" />
+            <img
+              alt="Vue "
+              src="../assets/ศาลหลักเมืองสุรินทร์.jpg"
+              style="width: 35%"
+            />
 
             <a-descriptions
               title="ข้อมูลสถานที่"
@@ -174,25 +210,19 @@
               <a-descriptions-item label="ลักษณะ">
                 <blockquote style="margin: 25px 50px 75px 100px">
                   <p style="text-indent: 50px; font-size: 16px" width="480">
-                    ปราสาทหินบ้านพลวง ตั้งอยู่ที่บ้านพลวง ตำบลกังแอน อำเภอปราสาท
-                    ห่างจากที่ว่าการอำเภอ 4 กิโลเมตร
-                    ตามถนนสายสุรินทร์-ปราสาท-ช่องจอม (ทางหลวงหมายเลข 214)
-                    มีทางแยกซ้ายมือเข้าไปอีก 900 เมตร ตรงกิโลเมตรที่ 34-35
-                    ปราสาทหินบ้านพลวงได้รับการขุดแต่งบูรณะเมื่อปี พ.ศ.2515
-                    โดยวิธีอนัสติโลซิส คือ การรื้อตัวปราสาทลงเสริมความมั่นคง
-                    และประกอบขึ้นใหม่ดังเดิม
-                    ลักษณะของปราสาทหินองค์นี้เป็นปรางค์องค์เดียว
-                    ตั้งอยู่บนฐานศิลาแลงขนาดใหญ่รูปสี่เหลี่ยมผืนผ้า
-                    หันหน้าไปทางทิศตะวันออก
-                    มีประตูทางเข้าอยู่ด้านหน้าเพียงด้านเดียว ส่วนด้านอื่นอีก 3
-                    ด้านทำเป็นประตูหลอก องค์ปรางค์ก่อด้วยศิลาแลง หินทราบ
-                    และมีอิฐเนวัสดุร่วมก่อสร้างในส่วนบนของปราสาท
-                    โบราณสถานแห่งนี้เป็นรูปสี่เหลี่ยมย่อมุม จำหลักลายงดงามมาก
-                    แต่องค์ปรางค์เหลือเพียงครึ่งเดียว ส่วนยอดหักหายไป
-                    มีคูน้ำเป็นรูปตัวยูล้อมรอบถัดจากคูน้ำเป็นบาราย
-                    (สระน้ำขนาดใหญ่)
-                    ที่เห็นเป็นคันดินเดิมคงเป็นที่ตั้งของแหล่งชุมชนมาก่อน
-                    บริเวณรอบองค์ปราสาทได้รับการตกแต่งไว้อย่างสวยงาม
+                    ครั้น พ.ศ. 2511
+                    จังหวัดสุรินทร์ได้ดำเนินการขอให้กรมศิลปากรออกแบบแปลนก่อสร้างตัวศาลหลักเมืองเสาหลักเมืองทำด้วยไม้ชัยพฤกษ์
+                    มีความสูง 3 เมตรวัดรอบได้ 1
+                    เมตรแกะสลักตกแต่งด้วยเจ้าหน้าที่ของกรมศิลปากร ต่อมาวันที่ 21
+                    สิงหาคม พ.ศ. 2515
+                    พระบาทสมเด็จพระเจ้าอยู่หัวทรงประกอบพิธีเจิมเสาหลักเมือง ณ
+                    ตำหนักจิตรลดารโหฐาน พระราชวังดุสิต
+                    ต่อมาจังหวัดสุรินทร์ได้มีการบูรณะปรับปรุงรูปแบบศาลหลักเมืองโดยการผสมผสานระหว่างศิลปะแบบเขมรและศิลปะแบบไทยเข้าด้วยกัน
+                    ทำให้ศาลหลักเมืองมีความสวยงามและใหญ่โตอลังการ
+                    ทั้งนี้ในอดีตเคยมีเหตุการณ์มหัศจรรย์เกิดขึ้นที่บริเวณศาลหลักเมืองเมื่อเกิดรอยแยกบนพื้นถนนทำให้มีการขุดลงไปพบพระพุทธรูปนาคปรกและวัตถุโบราณ
+                    เช่น พระเครื่องดินเผาและกำไลโบราณจำนวนมาก
+                    รวมถึงเครื่องปั้นภาชนะดินเผาสมัยก่อนประวัติศาสตร์ที่มีอายุราว
+                    1,500 – 2,000 ปี ชาวบ้านจึงได้นำไปบูชาที่ศาลหลักเมือง
                   </p>
                 </blockquote>
               </a-descriptions-item>
@@ -220,6 +250,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

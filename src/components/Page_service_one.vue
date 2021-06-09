@@ -1,11 +1,24 @@
-
-
-
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['23']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -141,12 +154,28 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item>
-            บริการที่ใกล้กับวนอุทยานแห่งชาติพนมสวาย</a-breadcrumb-item
+            บริการที่ใกล้กับปราสาทศรีขมรภูมิ</a-breadcrumb-item
           >
           <a-breadcrumb-item></a-breadcrumb-item>
         </a-breadcrumb>
@@ -161,37 +190,57 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="White Elephant Resort Hotel"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://portal.freetobook.com/reservations?w_id=16409&w_tkn=aMZxM6QuxvZvPeeX2G4Htg0wbaDkro9Lks4ZjYri8Yg9b5VYQrSmNhcVCSux7"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.1.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 540 บาท/คืน</p>
+                        <p>
+                          Surin, Thaïlande Amphur Muang 2/1-3 Surin Surin 32000
+                          Thailande
+                        </p>
+                        <p>เบอร์ติดต่อ : 044512579</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="โรงแรมมาติน่า (Martina Hotel)"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://martinahotelsurin.business.site/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.2.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 557 บาท/คืน</p>
+                        <p>
+                          277 หมู่ 14 บ้านระหาร ถนน พิชิตชัย ต.นอกเมือง เมือง
+                          สุรินทร์ 32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 044713555</p>
                       </a-card>
                       <br />
                     </div>
@@ -204,37 +253,48 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="ร้านอาหารสวนผัก" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://web.facebook.com/Labsikho/?_rdc=1&_rdr"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/ลาบ3.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันเสาร์ 8:00–15:00</p>
+                        <p>ม.3 ต ตำบล ระแงง อำเภอ ศีขรภูมิ สุรินทร์ 32110</p>
+                        <p>เบอร์ติดต่อ : 0643245619</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="ครัว ก.ไก่" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://web.facebook.com/kruakorkai/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/ห่อหมก1.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด :วันจันทร์-วันอาทิตย์ 10:00–21:00</p>
+                        <p>
+                          หมู่ 13 ประชาธิปัตย์ ตำบล ยาง อำเภอ ศีขรภูมิ สุรินทร์
+                          32110
+                        </p>
+                        <p>เบอร์ติดต่อ : -</p>
                       </a-card>
                       <br />
                     </div>
@@ -268,6 +328,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

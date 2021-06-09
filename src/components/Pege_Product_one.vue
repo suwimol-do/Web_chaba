@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['13']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,25 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
+
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -156,7 +190,11 @@
             <a-row type="flex" justify="center">
               <a-col :span="4">
                 <a-card hoverable style="width: 400px">
-                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ผ้าหนอนทอง.jpg"
+                  />
 
                   <div>
                     <a-button type="primary" @click="showModal">
@@ -168,16 +206,26 @@
                       @ok="handleOk"
                     >
                       <!-- รายละเอียด -->
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
-                      <p>Some contents...</p>
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : ศรีขรภูมิ
+                      </p>
+                      <p>
+                        ประเภทสินค้า : ผ้า และเครื่องแต่งกาย<br />
+                        ขนาด : 1x2 เมตร
+                      </p>
+                      <p>
+                        ชื่อผู้ติดต่อ : กลุ่มทอผ้าไหมอยู่ดีมีสุขบ้านพันษี<br />
+                        ที่อยู่ : หมู่ที่ 5 ต.จารพัด อ.ศีขรภูมิ จ.สุรินทร์<br />
+                        เบอร์ติดต่อ : 093-1085946
+                      </p>
                     </a-modal>
                   </div>
                   <br />
                   <br />
                   <!-- ชื่อสินค้า -->
-                  <a-card-meta title="Europe Street beat">
-                    <template slot="description"> www.instagram.com </template>
+                  <a-card-meta title="ผ้าไหมลายหนอนทอง">
+                    <template slot="description"> 3,500.00 บาท </template>
                     <br />
                     <br />
                   </a-card-meta>
@@ -186,27 +234,42 @@
               <a-col :span="4"> </a-col>
               <a-col :span="4">
                 <a-card hoverable style="width: 400px">
-                  <img slot="cover" alt="example" src="../assets/ของฝาก.jpg" />
+                  <img
+                    slot="cover"
+                    alt="example"
+                    src="../assets/ผ้าลายโบราญ.jpg"
+                  />
 
                   <div>
                     <a-button type="primary" @click="showModal">
                       รายละเอียนสินค้า
                     </a-button>
                     <a-modal
-                      v-model="visibl"
+                      v-model="visible"
                       title="Basic Modal"
                       @ok="handleOk"
                     >
-                      <p>Some</p>
-                      <p>Some</p>
-                      <p>Some</p>
+                      <!-- รายละเอียด -->
+                      <p>
+                        จังหวัด : สุรินทร์<br />
+                        อำเภอ : ศรีขรภูมิ
+                      </p>
+                      <p>
+                        ประเภทสินค้า : ผ้า และเครื่องแต่งกาย ขนาด : 1x3 เมตร<br />
+                        น้ำหนัก :-
+                      </p>
+                      <p>
+                        ชื่อผู้ติดต่อ : กลุ่มทอผ้าไหมอยู่ดีมีสุขบ้านพันษี<br />
+                        ที่อยู่ : หมู่ที่ 5 ต.จารพัด อ.ศีขรภูมิ จ.สุรินทร์<br />
+                        เบอร์ติดต่อ : 093-1085946
+                      </p>
                     </a-modal>
                   </div>
                   <br />
                   <br />
                   <!-- ชื่อสินค้า -->
-                  <a-card-meta title="Europe Street beat">
-                    <template slot="description"> www.instagram.com </template>
+                  <a-card-meta title="ผ้าไหมลายเหรียญโบราญ">
+                    <template slot="description"> 4,500 บาท </template>
                     <br />
                     <br />
                   </a-card-meta>
@@ -229,8 +292,8 @@
 export default {
   data() {
     return {
-      // collapsed: false,
-      visible: true,
+      collapsed: false,
+      visible: false,
     };
   },
   methods: {
@@ -246,6 +309,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

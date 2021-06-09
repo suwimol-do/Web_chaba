@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['32']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -155,37 +187,51 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="เขื่อนแก้วรีสอร์ท @กาบเชิง สุรินทร์"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://www.booking.com/searchresults.th.html?aid=357002;label=gog235jc-1DCAso3QFCFWVraHV1ZS1uYWVrdy1yaWlzLXJ0aEgmWANo3QGIAQGYASa4ARfIAQzYAQPoAQH4AQKIAgGoAgO4ApD7gYYGwAIB0gIkMzIyN2YwOTctMTkwNC00YWQ4LWI1NzgtNzRhZThkMDdmYzc02AIE4AIB;sid=6c86ffd3c8d6a50ff4aa7984ab03e540;closed_msg=6909436;dest_id=-3255507;dest_type=city;hlrd=14;sig=v1-Zq_0hBW"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.17.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 547 บาท/คืน</p>
+                        <p>198 ม.13 อำเภอ กาบเชิง สุรินทร์ 32210</p>
+                        <p>เบอร์ติดต่อ : 0809361424</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="โรงแรมมาลินี" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://www.agoda.com/th-th/h6734792/hotel/surin-th.html?cid=-211"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.18.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 650 บาท/คืน</p>
+                        <p>
+                          ถนน โชคชัย-เดชอุดม ตำบล สังขะ อำเภอ สังขะ สุรินทร์
+                          32150
+                        </p>
+                        <p>เบอร์ติดต่อ : 0933585066</p>
                       </a-card>
                       <br />
                     </div>
@@ -198,37 +244,51 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="ร้านแพทส้มตำรสเด็ด ( อาหารตามสั่ง)"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://thaiwhere.org/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3/restaurant-place-fc423e046f179b13f937389aaf3eaf9d.html#gsc.tab=0"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/ส้มตำ2.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันอาทิตย์ 8:00–17:00</p>
+                        <p>ตำบล ด่าน อำเภอ กาบเชิง สุรินทร์ 32210</p>
+                        <p>เบอร์ติดต่อ : 0917181954</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="ก๋วยเตี๋ยวเรือ ชัญญาภรณ์"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://web.facebook.com/people/%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8B%E0%B8%A2%E0%B8%A7%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD-%E0%B8%8A%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A0%E0%B8%A3%E0%B8%93%E0%B9%8C/100012111787121?_rdc=1&_rdr"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/ก๋วย1.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันอาทิตย์ 8:00–16:00</p>
+                        <p>ตำบล ด่าน อำเภอ กาบเชิง สุรินทร์ 32210</p>
+                        <p>เบอร์ติดต่อ : 0823789458</p>
                       </a-card>
                       <br />
                     </div>
@@ -261,6 +321,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

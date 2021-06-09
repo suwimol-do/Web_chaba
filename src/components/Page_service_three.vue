@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['25']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -157,37 +189,48 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="บัลลังก์ โฮเต็ล" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://th.hotels.com/ho615191264/ballangk-hotel-risxrth-x-nd-sra-way-na-thatum-thiy/?modal=dp"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.3.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 261 บาท/คืน</p>
+                        <p>
+                          131 M.10 Ban Banlang, Surin / Thatum, สุรินทร์ 32120
+                        </p>
+                        <p>เบอร์ติดต่อ : 0935727231</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
                       <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                        <a slot="extra" href="https://okayresort.business.site/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.4.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น - บาท/คืน</p>
+                        <p>
+                          196 Moo2 Tambon Chompholburi อำเภอ ชุมพลบุรี สุรินทร์
+                          32190
+                        </p>
+                        <p>เบอร์ติดต่อ : 0838414170</p>
                       </a-card>
                       <br />
                     </div>
@@ -200,37 +243,48 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="Maneewan Cafe'" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://retty.co.th/restaurant/41441/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/ส้มตำ.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันอาทิตย์ 8:00–20:00</p>
+                        <p>199 Elephant Village, Thatoom สุรินทร์</p>
+                        <p>เบอร์ติดต่อ : 0810631920</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="ร้านเตี๋ยว ต้ม ยำ #byสมปองandfamily"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://thaiwhere.org/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3/restaurant-place-f3bce0940555a26eb7bb4a38724e3926.html#gsc.tab=0"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/ก๋วย.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด :วันจันทร์-วันอาทิตย์ 10:00–21:00</p>
+                        <p>ตำบล กระโพ อำเภอ ท่าตูม สุรินทร์ 32120</p>
+                        <p>เบอร์ติดต่อ : 044145075</p>
                       </a-card>
                       <br />
                     </div>
@@ -263,6 +317,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);

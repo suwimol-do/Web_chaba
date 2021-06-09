@@ -1,8 +1,24 @@
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
     <a-layout-sider v-model="collapsed" collapsible>
+      <!-- Carousel -->
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/1.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/2.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/3.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/4.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <div class="logo" />
-      <a-menu theme="dark" :default-selected-keys="['2']" mode="inline">
+      <a-menu theme="dark" :default-selected-keys="['31']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="home" />
           <span>Home</span>
@@ -138,7 +154,23 @@
       </a-menu>
     </a-layout-sider>
     <!-- | -->
+    <!-- Carousel -->
     <a-layout>
+      <a-carousel autoplay>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/11.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/22.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/33.png" /></h3>
+        </div>
+        <div>
+          <h3><img slot="cover" alt="example" src="../assets/44.png" /></h3>
+        </div>
+      </a-carousel>
+      <!-- | -->
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
         <a-breadcrumb style="margin: 16px 0">
@@ -157,37 +189,54 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card
+                        title="โรงแรม เคทีไนท์ โฮเต็ล บาย เลดี้กาก้า"
+                        style="width: 500px"
+                      >
+                        <a
+                          slot="extra"
+                          href="https://www.facebook.com/682249865281571/photos/682249978614893/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.15.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 585 บาท/คืน</p>
+                        <p>
+                          87 ถนน กรุงศรีใน ตำบล ในเมือง อำเภอเมือง สุรินทร์
+                          32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0934547007</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อที่พัก" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="The Grace Residence" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://www.agoda.com/th-th/the-grace-residence/hotel/surin-th.html?cid=-211"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/รร.16.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>ราคาพักเริ่มต้น 690 บาท/คืน</p>
+                        <p>
+                          1 15 ถนน พรหมเทพ ตำบล ในเมือง อำเภอเมืองสุรินทร์
+                          สุรินทร์ 32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0838414170</p>
                       </a-card>
                       <br />
                     </div>
@@ -200,37 +249,51 @@
                 <a-row>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="For Foo Cafe'" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://www.facebook.com/For-Foo-cafe-%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9F%E0%B8%B9%E0%B9%88-%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88-106005109945156/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/คาเฟ่.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันอาทิตย์ 8:00–18:30</p>
+                        <p>
+                          หลักเมือง ตำบล ในเมือง อำเภอเมืองสุรินทร์ สุรินทร์
+                          32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0894269992</p>
                       </a-card>
                     </div>
                   </a-col>
                   <a-col :span="12">
                     <div>
-                      <a-card title="ชื่อร้านอาหาร" style="width: 500px">
-                        <a slot="extra" href="#">สอบถามได้ที่</a>
+                      <a-card title="Best Space Cafe" style="width: 500px">
+                        <a
+                          slot="extra"
+                          href="https://best-space-cafe.business.site/"
+                          >สอบถามได้ที่</a
+                        >
                         <img
                           alt="Vue "
-                          src="../assets/วัด2.jpg"
+                          src="../assets/คาเฟ่2.jpg"
                           style="width: 300px"
                         />
                         <br />
                         <br />
                         <br />
-                        <p>card content</p>
-                        <p>card content</p>
-                        <p>card content</p>
+                        <p>เปิด : วันจันทร์-วันอาทิตย์ 8:00–17:00</p>
+                        <p>
+                          52, 5 ซอย สุริยราช ตำบล ในเมือง อำเภอเมืองสุรินทร์
+                          สุรินทร์ 32000
+                        </p>
+                        <p>เบอร์ติดต่อ : 0813932526</p>
                       </a-card>
                       <br />
                     </div>
@@ -263,6 +326,17 @@ export default {
 </script>
 
 <style>
+/* Carousel */
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
